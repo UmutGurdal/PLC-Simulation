@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class InterfaceManager : MonoBehaviour
 {
-    [SerializeField]
-    private InterfaceElement
+    public InterfaceElement
         MainMenu,
         StudyMenu,
         TableMenu;
@@ -23,30 +22,21 @@ public class InterfaceManager : MonoBehaviour
 
     private void Start()
     {
-        ChangeUI(MenuType.MainMenu);
+        StartCoroutine(ChangeUI(GameManager.ins.interfaceManager.MainMenu, 0));
     }
 
-    public void ChangeUI(MenuType menuType)
+    //public void ChangeUI(InterfaceElement iElement)
+    //{
+    //
+    //}
+
+    public IEnumerator ChangeUI(InterfaceElement iElement, float delay) 
     {
         activeInterface?.gameObject.SetActive(false);
-
-        switch (menuType)
-        {
-            case MenuType.MainMenu:
-                MainMenu.gameObject.SetActive(true);
-                activeInterface = MainMenu;
-                break;
-
-            case MenuType.StudyMenu:
-                StudyMenu.gameObject.SetActive(true);
-                activeInterface = StudyMenu;
-                break;
-
-            case MenuType.Table:
-                TableMenu.gameObject.SetActive(true);
-                activeInterface = TableMenu;
-                break;
-        }
-
+        yield return new WaitForSeconds(delay);
+        iElement.gameObject.SetActive(true);
+        activeInterface = iElement;
     }
+
+
 }

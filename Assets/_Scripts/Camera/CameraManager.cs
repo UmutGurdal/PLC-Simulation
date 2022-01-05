@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField]
-    private CinemachineVirtualCamera
+    public CinemachineVirtualCamera
         MainMenuCam,
         StudyMenuCam,
         TableCam;
@@ -22,29 +21,13 @@ public class CameraManager : MonoBehaviour
 
     private void Start()
     {
-        ChangeCamera(MenuType.MainMenu);
+        ChangeCamera(MainMenuCam);
     }
 
-    public void ChangeCamera(MenuType menuType) 
+    public void ChangeCamera(CinemachineVirtualCamera VirCam) 
     {
         activeCam?.gameObject.SetActive(false);
-
-        switch (menuType) 
-        {
-            case MenuType.MainMenu:
-                MainMenuCam.gameObject.SetActive(true);
-                activeCam = MainMenuCam;
-                break;
-
-            case MenuType.StudyMenu:
-                StudyMenuCam.gameObject.SetActive(true);
-                activeCam = StudyMenuCam;
-                break;
-
-            case MenuType.Table:
-                TableCam.gameObject.SetActive(true);
-                activeCam = TableCam;
-                break;
-        }
+        VirCam.gameObject.SetActive(true);
+        activeCam = VirCam;
     }
 }

@@ -17,22 +17,5 @@ public class GameManager : MonoBehaviour
         ins = this;
     }
 
-    public void ChangeToMainMenu() 
-    {
-    
-    }
-
-    public void ChangeToStudyMenu() 
-    {
-        MenuType menuType = MenuType.StudyMenu;
-        cameraManager.ChangeCamera(menuType);
-        interfaceManager.ChangeUI(menuType);
-    }
-
-    public void ChangeToTableMenu() 
-    {
-    
-    }
-
-    
+        
 }
