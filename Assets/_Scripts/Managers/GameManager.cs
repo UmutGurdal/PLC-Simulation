@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [Space][Header("Managers")]
     public CameraManager cameraManager;
     public InterfaceManager interfaceManager;
+    public StudyManager studyManager;
     
 
     private void Awake()

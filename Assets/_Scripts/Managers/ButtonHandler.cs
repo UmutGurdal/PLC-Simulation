@@ -28,9 +28,29 @@ public class ButtonHandler : MonoBehaviour
         StartCoroutine(GameManager.ins.interfaceManager.ChangeUI(GameManager.ins.interfaceManager.StudyMenu, 2));
     }
 
-    public void ChangeToTableMenu()
+    public void ChangeToStudyOne() 
     {
         GameManager.ins.cameraManager.ChangeCamera(GameManager.ins.cameraManager.TableCam);
         StartCoroutine(GameManager.ins.interfaceManager.ChangeUI(GameManager.ins.interfaceManager.TableMenu, 2));
+        GameManager.ins.studyManager.ChangeStudy(GameManager.ins.studyManager.StudyOne);
+    }
+
+    public void ChangeToStudyTwo()
+    {
+        GameManager.ins.cameraManager.ChangeCamera(GameManager.ins.cameraManager.TableCam);
+        StartCoroutine(GameManager.ins.interfaceManager.ChangeUI(GameManager.ins.interfaceManager.TableMenu, 2));
+        GameManager.ins.studyManager.ChangeStudy(GameManager.ins.studyManager.StudyTwo);
+    }
+
+    public void ChangeToStudyThree()
+    {
+        GameManager.ins.cameraManager.ChangeCamera(GameManager.ins.cameraManager.TableCam);
+        StartCoroutine(GameManager.ins.interfaceManager.ChangeUI(GameManager.ins.interfaceManager.TableMenu, 2));
+        GameManager.ins.studyManager.ChangeStudy(GameManager.ins.studyManager.StudyThree);
+    }
+
+    public void ExitGame() 
+    {
+        Application.Quit();
     }
 }
