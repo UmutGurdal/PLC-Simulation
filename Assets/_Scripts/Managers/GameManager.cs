@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public CameraManager cameraManager;
     public InterfaceManager interfaceManager;
     public StudyManager studyManager;
+
+    [Space][Header("Data")]
+    public GameData gameData;
     
 
     private void Awake()

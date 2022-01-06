@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: d672464ebdf85ce46a19e685b11591a1
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AluminiumCapacitor
+    second: {fileID: 2100000, guid: 353c0de9bfe978940a2a949da1a9773a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AluminiumCapacitorBase
+    second: {fileID: 2100000, guid: 2982a2f72e614a64ab88725afe36a28b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AluminiumCapacitorTopBlack
+    second: {fileID: 2100000, guid: e1ced0f5cee50ed4ba493c0c2eb478a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseDiodeBlack
+    second: {fileID: 2100000, guid: 05e0c4868dd8c0b4a8882a37f20a2cac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseDiodeGray
+    second: {fileID: 2100000, guid: abf3ddcb2a490ce45be7a26695972069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatteryBase
+    second: {fileID: 2100000, guid: 20785c8ee758b734c8da3b3a680f20db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatteryBaseBlack
+    second: {fileID: 2100000, guid: 4f745f5db932452479abcea131e3ade2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CeramicCapacitorBase
+    second: {fileID: 2100000, guid: 78075a130ddec9a47bfbf0ce33fcb85a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CeramicCapacitorConnectors
+    second: {fileID: 2100000, guid: 52dcd95ebc67c174cab5c24fb9513614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DiodeConnector
+    second: {fileID: 2100000, guid: f14822c37ca7e264b953a473ca33e0ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ElectrolyticCapacitor
+    second: {fileID: 2100000, guid: 0bd4f79e0e6925a4d9ceea2fdb9181ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ElectrolyticCapacitorMinus
+    second: {fileID: 2100000, guid: 194bb2d1287e2f143b38688bcb9ef9bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ElectrolyticCapacitorTop
+    second: {fileID: 2100000, guid: 6e2d2ebf801680a46a5b9e5a53f67b48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 46063d88d3396914badbed247eb2093b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedConnector
+    second: {fileID: 2100000, guid: 3a15cab4dd1a2434aaa2f893dd173e00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedConnector.001
+    second: {fileID: 2100000, guid: 74246708581c51e42ac77fb3dc5ac815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedConnector.002
+    second: {fileID: 2100000, guid: b7c4d57e61efe73449f04995358708eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Led_Green
+    second: {fileID: 2100000, guid: ca69edadf6ee5584493bf838ad771993, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Led_Red
+    second: {fileID: 2100000, guid: 7abe6067e5f74584b9f957651c104bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Led_White
+    second: {fileID: 2100000, guid: 990ef6143c7b1ec4790f9b71c20cfc1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 0cd4f075567a6964a954bc1896215f0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal.001
+    second: {fileID: 2100000, guid: bcfcf90f66da977498aa66c158bbaac9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MicroController
+    second: {fileID: 2100000, guid: 53010bd2ae219ee41b207ae2c5b76ad8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MicroControllerConnectors
+    second: {fileID: 2100000, guid: ccad3d68a8184f34598ea6f799d7c3c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MicroControllerHoles
+    second: {fileID: 2100000, guid: f6860890e504f314a93f76c841a98545, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MicroProcessorBase
+    second: {fileID: 2100000, guid: b552c7ed8f84dd242a199017e5429902, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MicroProcessorConnectors
+    second: {fileID: 2100000, guid: 6acad73e7827e5d43aa77ec49fb1e913, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorBlue
+    second: {fileID: 2100000, guid: 8e051250732613e4db27385b009411bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorCeramicBase
+    second: {fileID: 2100000, guid: 932ee15f9873c5f40a2249dfe05f9e69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorConnector
+    second: {fileID: 2100000, guid: 83b9036b477aab44fabedc9f33a1198a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorGold
+    second: {fileID: 2100000, guid: fce83741755dc4a4fa1fbb50d7ba903a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorGreen
+    second: {fileID: 2100000, guid: 3667b20aa2ed21a489c35dd04c1d4c62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorPurple
+    second: {fileID: 2100000, guid: b6fd78a6a94f9534bab54f140dfa8bc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorRed
+    second: {fileID: 2100000, guid: 29ee7c22b0002084a91164a6a686e259, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ResistorYellow
+    second: {fileID: 2100000, guid: db95b2f0de5fcd9469ff0fa147e1aa3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text
+    second: {fileID: 2100000, guid: bb838f799e16e7145aff93f85e2db329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TransistorLegs
+    second: {fileID: 2100000, guid: 59602112d9ecda84384c0c6c3b0fbe2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TransistorTop
+    second: {fileID: 2100000, guid: d26255596015f99428b236a6ea0d4118, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire
+    second: {fileID: 2100000, guid: ab9c7b323c2104649ae59e5b146fb79f, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
