@@ -5,14 +5,14 @@ using UnityEngine;
 public class StudyManager : MonoBehaviour
 {
 
-    public Study
+    public GameObject
         StudyOne,
         StudyTwo,
         StudyThree;
 
-    private Study activeStudy;
+    private GameObject activeStudy;
 
-    public void ChangeStudy(Study study)
+    public void ChangeStudy(GameObject study)
     {
         activeStudy?.gameObject.SetActive(false);
         study.gameObject.SetActive(true);

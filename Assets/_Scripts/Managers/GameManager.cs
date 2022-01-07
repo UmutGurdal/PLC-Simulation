@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public CameraManager cameraManager;
     public InterfaceManager interfaceManager;
     public StudyManager studyManager;
+    public CommunicationManager comManager;
 
     [Space][Header("Data")]
     public GameData gameData;

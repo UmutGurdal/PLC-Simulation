@@ -6,29 +6,16 @@ using System.Collections.Generic;
 public class CommunicationManager : MonoBehaviour
 {
     public Plc plc;
-    public static CommunicationManager ins;
-
-
-    // Variables
-
-    public bool bool01;
 
     // Confugirations
-
     private GameData data;
-    private bool isConnected;
 
-    private void Awake()
-    {
-        if (ins != null) return;
-
-        ins = this;
-    }
+    // Variables
+    public bool isConnected;
 
     private void Start()
     {
         data = GameManager.ins.gameData;
-        ConnectPlc();
     }
 
     [Button]
@@ -39,33 +26,27 @@ public class CommunicationManager : MonoBehaviour
 
         if (plc != null)
         {
+            plc.Open();
             isConnected = true;
-            Debug.Log("PLC Defined");
+            Debug.Log("PLC Connected");
         }
 
         else Debug.LogError("plc is null");
     }
 
     [Button]
-    public void ReadPlcData(string input)
+    public bool ReadPlcData(string input)
     {
-        if (!isConnected) return;
-        plc.Open();
-        bool01 = (bool)plc.Read("input");
-        //Debug.Log("Read completed");
+        return (bool)plc.Read(input);
     }
 
     public void WriteBool(string output, bool value) 
     {
-        if (!isConnected) return;
-        plc.Open();
         plc.Write(output, value);
     }
 
     public void WriteInt(string output, int value)
     {
-        if (!isConnected) return;
-        plc.Open();
         plc.Write(output, value);
     }
 

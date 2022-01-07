@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e99d721ea82477248a0f142868380b02, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  camDelay: 1
+  cpuType: 4
+  ip: 192.168.0.1
+  rack: 0
+  slot: 1
+  dataBlock: DB1.DBX0.0
