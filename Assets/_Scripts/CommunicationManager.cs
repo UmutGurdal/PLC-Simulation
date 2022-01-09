@@ -1,6 +1,6 @@
-using S7.Net;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using S7.Net;
 using System.Collections.Generic;
 
 public class CommunicationManager : MonoBehaviour
