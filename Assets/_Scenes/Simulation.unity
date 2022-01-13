@@ -2349,9 +2349,9 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1259815354}
         m_TargetAssemblyTypeName: InputFieldHandler, Assembly-CSharp
-        m_MethodName: ChangeDataBlock
+        m_MethodName: BoolWriteBlock
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9159,9 +9159,9 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1259815354}
         m_TargetAssemblyTypeName: InputFieldHandler, Assembly-CSharp
-        m_MethodName: ChangeDataBlock
+        m_MethodName: IntReadBlock
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24954,9 +24954,9 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1259815354}
         m_TargetAssemblyTypeName: InputFieldHandler, Assembly-CSharp
-        m_MethodName: ChangeDataBlock
+        m_MethodName: IntWriteBlock
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27692,6 +27692,10 @@ PrefabInstance:
     - target: {fileID: 1943751547754354421, guid: 21082ddbebbeec84495a27c5cb1d2a57, type: 3}
       propertyPath: m_Name
       value: Motor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260846368631111038, guid: 21082ddbebbeec84495a27c5cb1d2a57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7327142267572137013, guid: 21082ddbebbeec84495a27c5cb1d2a57, type: 3}
       propertyPath: m_RootOrder

@@ -6,16 +6,17 @@ public class Study02 : MonoBehaviour
 {
     [SerializeField] private float rotSpeed = 10;
     [SerializeField] private Transform motorMil;
+
     private void Update()
     {
         if (!GameManager.ins.comManager.isConnected) return;
 
         bool isPressed = GameManager.ins.comManager.ReadBool(GameManager.ins.gameData.BoolBlockToRead);
-        float speed;
+        float speed = GameManager.ins.comManager.ReadInt(GameManager.ins.gameData.IntBlockToRead);
         
-        if (isPressed) speed = rotSpeed;
-        else speed = 0;
+        if (isPressed) rotSpeed = speed * 100;
+        else rotSpeed = 0;
 
-        motorMil.Rotate(0, motorMil.rotation.y + speed * Time.deltaTime, 0);
+        motorMil.Rotate(0, motorMil.rotation.y + rotSpeed * Time.deltaTime, 0);
     }
 }

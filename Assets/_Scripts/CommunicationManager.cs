@@ -48,6 +48,11 @@ public class CommunicationManager : MonoBehaviour
         plc.Write(blockAddress, value);
     }
 
+    public int ReadInt(string blockAddress) 
+    {
+        return (ushort)plc.Read(blockAddress);
+    }
+
     public void WriteInt(string blockAddress, int value)
     {
         plc.Write(blockAddress, value);

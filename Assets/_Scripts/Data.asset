@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e99d721ea82477248a0f142868380b02, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  cpuType: 30
-  ip: 192.168.0.1
+  cpuType: 4
+  ip: 192.168.0.10
   rack: 0
   slot: 1
   BoolBlockToRead: DB1.DBX0.0
   BoolBlockToWrite: DB1.DBX0.1
-  IntBlockToRead: DB1.DBX0.2
+  IntBlockToRead: DB1.DBW2
   IntBlockToWrite: DB1.DBX0.3
