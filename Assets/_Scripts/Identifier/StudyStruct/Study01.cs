@@ -13,7 +13,7 @@ public class Study01 : MonoBehaviour
     {
         if (!GameManager.ins.comManager.isConnected) return;
 
-        bool isPressed = GameManager.ins.comManager.ReadPlcData("DB1.DBX0.0");
+        bool isPressed = GameManager.ins.comManager.ReadBool(GameManager.ins.gameData.BoolBlockToRead);
 
         if (isPressed) LEDrenderer.material = LedOpenMat;
         else LEDrenderer.material = LedClosedMat;

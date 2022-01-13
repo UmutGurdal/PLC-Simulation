@@ -10,17 +10,19 @@ public class Study03 : MonoBehaviour
     private bool isSwitchOn;
     private void OnMouseDown()
     {
+        var com = GameManager.ins.comManager;
+
         if (isSwitchOn)
         {
             switchObj.DOLocalMoveX(0.00381f, 0.3f);
             isSwitchOn = false;
-            //GameManager.ins.comManager.WriteBool();
+            if(com.isConnected) com.WriteBool(GameManager.ins.gameData.BoolBlockToWrite, false);
         }
         else
         {
             switchObj.DOLocalMoveX(-0.00033f, 0.3f);
             isSwitchOn = true;
-            //GameManager.ins.comManager.WriteBool();
+            if(com.isConnected) com.WriteBool(GameManager.ins.gameData.BoolBlockToWrite, true);
         }
     }
 }

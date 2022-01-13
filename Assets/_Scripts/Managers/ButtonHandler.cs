@@ -49,6 +49,11 @@ public class ButtonHandler : MonoBehaviour
         GameManager.ins.studyManager.ChangeStudy(GameManager.ins.studyManager.StudyThree);
     }
 
+    public void ApplyButton() 
+    {
+        GameManager.ins.comManager.ConnectPlc();
+    }
+
     public void ExitGame() 
     {
         Application.Quit();

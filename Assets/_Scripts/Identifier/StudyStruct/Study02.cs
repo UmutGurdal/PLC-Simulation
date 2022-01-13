@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Study02 : MonoBehaviour
 {
-    [SerializeField] private float rotSpeed;
+    [SerializeField] private float rotSpeed = 10;
     [SerializeField] private Transform motorMil;
     private void Update()
     {
         if (!GameManager.ins.comManager.isConnected) return;
 
-        bool isPressed = GameManager.ins.comManager.ReadPlcData("DB1.DBX0.0");
+        bool isPressed = GameManager.ins.comManager.ReadBool(GameManager.ins.gameData.BoolBlockToRead);
+        float speed;
+        
+        if (isPressed) speed = rotSpeed;
+        else speed = 0;
 
-        if (isPressed) transform.rotation = Quaternion.Euler(0,transform.rotation.y + rotSpeed,0);
-        else transform.rotation = Quaternion.Euler(0, transform.rotation.y, 0);
+        motorMil.Rotate(0, motorMil.rotation.y + speed * Time.deltaTime, 0);
     }
 }

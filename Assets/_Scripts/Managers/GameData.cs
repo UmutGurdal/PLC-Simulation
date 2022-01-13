@@ -10,5 +10,9 @@ public class GameData : ScriptableObject
     public string ip = "192.168.0.1";
     public int rack = 0;
     public int slot = 1;
-    public string dataBlock = "DB1.DBX0.0";
+    [Space]
+    public string BoolBlockToRead = "DB1.DBX0.0";
+    public string BoolBlockToWrite = "DB1.DBX0.1";
+    public string IntBlockToRead = "DB1.DBX0.2";
+    public string IntBlockToWrite = "DB1.DBX0.3";
 }

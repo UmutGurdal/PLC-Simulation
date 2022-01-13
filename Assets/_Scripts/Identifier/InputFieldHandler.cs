@@ -7,44 +7,77 @@ using S7.Net;
 
 public class InputFieldHandler : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField
-        ipAddress,
-        rack,
-        slot,
-        dataBlock;
-
+    [Header("General PLC")]
+    [SerializeField] private TMP_InputField ipAddress;
+    [SerializeField] private TMP_InputField rack;
+    [SerializeField] private TMP_InputField slot;
     [SerializeField] private TMP_Dropdown dropdown;
+
+    [Header("PLC Datablock")]
+    [SerializeField] private TMP_InputField readBool;
+    [SerializeField] private TMP_InputField writeBool;
+    [SerializeField] private TMP_InputField readInt;
+    [SerializeField] private TMP_InputField writeInt;
+
+
+
+    private GameData data;
+
+    private void Awake()
+    {
+        data = GameManager.ins.gameData;    
+    }
+
 
     private void OnEnable()
     {
-        dropdown.value = (int)GameManager.ins.gameData.cpuType;
-        ipAddress.text = GameManager.ins.gameData.ip;
-        rack.text = GameManager.ins.gameData.rack.ToString();
-        slot.text = GameManager.ins.gameData.slot.ToString();
-        dataBlock.text = GameManager.ins.gameData.dataBlock;
+        dropdown.value = (int)data.cpuType;
+        ipAddress.text = data.ip;
+        rack.text = data.rack.ToString();
+        slot.text = data.slot.ToString();
+
+        readBool.text = data.BoolBlockToRead;
+        writeBool.text = data.BoolBlockToWrite;
+        readInt.text = data.IntBlockToRead;
+        writeInt.text = data.IntBlockToWrite;
     }
 
     public void ChangeCpuType(int i) 
     {
-        GameManager.ins.gameData.cpuType = (CpuType)i;
+        data.cpuType = (CpuType)i;
     }
     public void ChangeIpAddress(string str) 
     {
-        GameManager.ins.gameData.ip = str;    
+        data.ip = str;    
     }
 
     public void ChangeRack(string str) 
     {
-        GameManager.ins.gameData.rack = int.Parse(str);
+        data.rack = int.Parse(str);
     }
 
     public void ChangeSlot(string str) 
     {
-        GameManager.ins.gameData.slot = int.Parse(str);
+        data.slot = int.Parse(str);
     }
 
-    public void ChangeDataBlock(string str) 
+    public void BoolReadBlock(string str) 
     {
-        GameManager.ins.gameData.dataBlock = str;
+        data.BoolBlockToRead = str;
+    }
+
+    public void BoolWriteBlock(string str) 
+    {
+        data.BoolBlockToWrite = str;
+    }
+
+    public void IntReadBlock(string str) 
+    {
+        data.IntBlockToRead = str;
+    }
+
+    public void IntWriteBlock(string str)
+    {
+        data.IntBlockToWrite = str;
     }
 }
