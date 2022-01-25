@@ -25,11 +25,6 @@ public class InterfaceManager : MonoBehaviour
         StartCoroutine(ChangeUI(GameManager.ins.interfaceManager.MainMenu, 0));
     }
 
-    //public void ChangeUI(InterfaceElement iElement)
-    //{
-    //
-    //}
-
     public IEnumerator ChangeUI(InterfaceElement iElement, float delay) 
     {
         activeInterface?.gameObject.SetActive(false);
